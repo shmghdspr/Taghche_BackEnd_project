@@ -30,21 +30,7 @@ pip install -r requirements.txt
 
 ## Running the Application
 
-To start the FastAPI server, follow these steps:
-
-1. **Activate your virtual environment**:
-
-   - **On Windows**:
-     ```bash
-     .\venv\Scripts\activate
-     ```
-
-   - **On macOS/Linux**:
-     ```bash
-     source venv/bin/activate
-     ```
-
-2. **Run the FastAPI application** using `uvicorn`:
+1. **Run the FastAPI application** using `uvicorn`:
 
    ```bash
    uvicorn main:app --reload
