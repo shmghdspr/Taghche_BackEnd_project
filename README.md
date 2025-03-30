@@ -75,7 +75,7 @@ This will run all the tests in your project and output the results to the termin
 ### Example Output:
                                                                                                                                  
 ```python
-- test_cache.py::test_memory_cache <span style="color: green;">PASSED</span>
+- test_cache.py::test_memory_cache PASSED
 
 - test_cache.py::test_redis_cache PASSED           
 - test_cache.py::test_cache_miss_and_api_call FAILED
