@@ -65,6 +65,7 @@ class RedisCache(CacheBase):
     def set(self, key: str, value: dict):
         json_value = json.dumps(value, ensure_ascii=False)
         self.redis_client.set(key, json_value)  # ذخیره بدون انقضا
+        self.redis_client.expire(key, self.ttl)
 
 
     def delete(self, key: str):
