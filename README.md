@@ -82,4 +82,15 @@ This will run all the tests in your project and output the results to the termin
 - test_cache.py::test_cache_storage FAILED     
 - test_cache.py::test_book_not_found PASSED   
 - test_cache.py::test_api_timeout FAILED
-```  
+```
+
+## Future Steps
+
+Here are some potential improvements and features to be implemented in the future:
+
+- **Load Configuration from an External YAML File**: Instead of hardcoding configuration values in the code, the service could load the configuration settings (such as cache TTL, Redis settings, etc.) from an external YAML file. This would provide greater flexibility and ease of modification without changing the codebase.
+
+- **Prefix Keys in Redis**: Currently, keys are stored directly in Redis without any prefix. To improve organization and avoid key collisions, a prefix can be added to the keys. For example, instead of storing a key like `1024`, it could be stored as `taghche.book.1024`. This would make the keys more structured and easily identifiable.
+
+- **Add Type Hints**: To improve code readability and support better IDE autocompletion, type hints will be added to the functions and methods in the code. This would help developers understand the expected types for function arguments and return values.
+
